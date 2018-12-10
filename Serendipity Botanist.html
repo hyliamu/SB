@@ -1,130 +1,69 @@
-
-
-
-<body>
-
-  <html lang="en">
-  <title>W3.CSS Template</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <!-- Header -->
-  <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-    <img class="w3-image" src="/Users/Roger/Desktop/SB images/Tann.jpg" alt="Tann" width="1500" height="600">
-    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">SERENDIPITY BOTANIST LTD.</h1>
-      <h5 class="w3-hide-large" style="white-space:nowrap">Serendipity Botanist</h5>
-      <h3 class="w3-hide-medium w3-hide-small">WEDDING FLORAL</h3>
-    </div>
-
-
-  <hr>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<i class="fa fa-heart"></i>
-
-<h2> Gallery </h2>
-<h3> Our various wedding work in UK/International.</h3>
-
+<!doctype html>
 
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="/Users/Roger/Desktop/Serendipity Botanist.css" rel="stylesheet" type="text/css">
+
 <style>
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
+/* Images used */
+.img1 { background-image: url("/Users/Roger/Desktop/SB images/NM_213 (1).jpg"); }
+.img2 { background-image: url("/Users/Roger/Desktop/SB images/NM_224.jpg"); }
+.img3 { background-image: url("/Users/Roger/Desktop/SB images/Tann.jpg"); }
+.img4 { background-image: url("/Users/Roger/Desktop/SB images/0D0A8924.jpg"); }
+.img5 { background-image: url("/Users/Roger/Desktop/SB images/2016-03-24 19.57.30.jpg"); }
+.img6 { background-image: url("/Users/Roger/Desktop/SB images/2016-03-24 19.56.55.jpg"); }
 
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
 }
 </style>
 </head>
 <body>
 
-<h2></h2>
-<h4></h4>
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="/Users/Roger/Desktop/SB images/2016-03-24 19.57.30.jpg">
-      <img src="/Users/Roger/Desktop/SB images/2016-03-24 19.57.30.jpg" alt="Soho1" width="600" height="400">
-    </a>
-    <div class="desc">Private Investment Dinner - Soho, London</div>
-  </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="/Users/Roger/Desktop/SB images/0D0A8924.jpg">
-      <img src="/Users/Roger/Desktop/SB images/0D0A8924.jpg" alt="Soho2" width="600" height="400">
-    </a>
-    <div class="desc">Village Underground - Shoreditch, London</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="/Users/Roger/Desktop/SB images/NM_224.jpg">
-      <img src="/Users/Roger/Desktop/SB images/NM_224.jpg" alt="Shoreditch" width="600" height="400">
-    </a>
-    <div class="desc">Large scale wedding - Hong Kong</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="/Users/Roger/Desktop/SB images/NM_213 (1).jpg">
-      <img src="/Users/Roger/Desktop/SB images/NM_213 (1).jpg" alt="Hong Kong" width="600" height="400">
-    </a>
-    <div class="desc">Large scale wedding - Hong Kong</div>
-  </div>
-</div>
-
-<div class="clearfix"></div>
-
-<div style="padding:6px;">
-
+<div class="bg-text">S B.</div>
 
 </body>
 </html>
